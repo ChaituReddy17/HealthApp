@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Dr.Chaitanya Exclusive for babies</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card" role="main">
+      <div class="row">
+        <div class="col" style="flex:0.9">
+          <h1>Instant "Health" Check</h1>
+          <p class="lead">Hi Patient I am Doctor Chaitanya and you know me very well Baby. I am being professional with this health Checkup so please let me do my Job please now please try not be cute and lovely.</p>
+
+          <label for="name">Patient name</label>
+          <input id="name" type="text" placeholder="e.g. Likitha" value="" />
+
+          <label for="place">Where are you?</label>
+          <input id="place" type="text" placeholder="e.g.Ofcourse My heart but lets be professional Home / College / Cafe" />
+          <div class="muted">Final message style</div>
+            <select id="tone" style="margin-top:6px">
+              <option>Playful</option>
+              <option>Flirty</option>
+              <option>Super cheesy</option>
+              <option>Sassy</option>
+            </select>
+
+          <div style="height:12px"></div>
+
+          <div class="finger-placeholder">
+            <div class="finger" id="finger">
+              <img src="Doctor1.png" alt="" class="doctor-img">
+            </div>
+            <div style="height:10px"></div>
+            <div class="muted">Place finger here and press <span class="pill">Start</span></div>
+          </div>
+
+          <div style="display:flex;gap:12px;margin-top:12px">
+            <button id="startBtn" class="btn start">Start</button>
+            <button id="resetBtn" class="btn reset">Reset</button>
+            <div style="flex:1"></div>
+          </div>
+
+          <div class="questions hidden" id="questions">
+            <div class="question">1. Mood check — how's the vibe baby?
+              <select id="q1">
+                <option>Ammzzzzfied</option>
+                <option>Lovely</option>
+                <option>Okay</option>
+                <option>Grumpy</option>
+              </select>
+            </div>
+            <div class="question">2. Nee Favourite snack enti baby?
+              <input id="q2" placeholder="eg. chocolate"/>
+            </div>
+            <div class="question">3. Pick a color Baby
+              <select id="q3">
+                <option>Baby Pink</option>
+                <option>Baby Pink</option>
+                <option>Baby Pink</option>
+                <option>Baby Pink</option>
+              </select>
+            </div>
+            <div class="'question">4. When do you think of me?
+                <select id="q4">
+                    <option>Before sleep</option>
+                    <option>After waking up</option>
+                    <option>Both</option>
+                </select>
+            </div>
+            <div class="'question">5. Who is more Cute Baby
+                <select id="q5">
+                    <option>Mee</option>
+                    <option>Youu</option>
+                    <option>We Both are but not Likitha</option>
+                </select>
+            </div>
+            <div class="'question">6.Which nickname would you pick for me?
+                <select id="q6">
+                    <option>Chaitzzz</option>
+                    <option>Cutie Baby</option>
+                    <option>Pookie</option>
+                </select>
+            </div>
+            <div class="'question">7. Which emoji describes me best?
+                <select id="q7">
+                    <option value="🎀">🎀</option>
+                    <option value="😘">😘</option>
+                    <option value="🤡">🤡</option>
+                    <option value="🧸">🧸</option>
+                </select>
+            </div>
+            <div style="text-align:right;margin-top:8px">
+                <button id="finishBtn" class="btn finish">Finish</button>
+            </div>
+          </div>
+
+          <div id="reportBox" class="hidden">
+            <div class="report" id="report">
+              <div class="big" id="reportTitle">Results</div>
+              <div class="small" id="reportSubtitle">Summary</div>
+              <div style="height:10px"></div>
+              <div id="reportMain">----</div>
+            </div>
+
+            <div style="display:flex;gap:8px;margin-top:10px;align-items:center">
+                <button id="shareBtn" class="btn share">
+                    <i class='bx bx-share-alt'></i> Copy Link
+                </button>
+                <button id="downloadBtn" class="btn download">
+                    <i class='bx bx-download'></i> Download Card
+                </button>
+                <div style="flex:1"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <canvas id="confetti" class="confetti-canvas hidden"></canvas>
+  <script src="script.js"></script>
+</body>
+</html>
